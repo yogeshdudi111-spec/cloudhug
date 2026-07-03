@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>cloudHug</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="homepage">
+            <header>
+                <nav>
+                    <div id="logo">
+                        <img src="logo.png" alt="cloudhug" />
+                    </div>
+                    <div id="bar">
+                        <input type="text" placeholder="Search City" id="cityInput" />
+                        <input type="button" value="Search" id="getWeatherbtn" />
+                        <input type="button" value="📍 My Location" id="locationBtn" />
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <section id="current" class="weather-box">
+                    <h2>Current Conditions</h2>
+                    <p id="city"></p>
+                    <p id="updatedTime"></p>
+                    <div id="weatherContent">
+                        <div id="leftWeather">
+                            <div id="tempCard">
+                                <img id="currentIcon" src="#" alt="Weather Icon" />
+                                <div id="tempBox">
+                                    <p id="temperature"></p>
+                                    <p id="condition"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="extradetails">
+                            <div class="detailBox">
+                                <span>Feels Like</span>
+                                <strong id="feels"></strong>
+                            </div>
+
+                            <div class="detailBox">
+                                <span>Humidity</span>
+                                <strong id="humidity"></strong>
+                            </div>
+
+                            <div class="detailBox">
+                                <span>Wind</span>
+                                <strong id="wind"></strong>
+                            </div>
+                            <div class="detailBox">
+                                <span>Pressure</span>
+                                <strong id="pressure"></strong>
+                            </div>
+
+                            <div class="detailBox">
+                                <span>UV Index</span>
+                                <strong id="uv"></strong>
+                            </div>
+                            <div class="detailBox">
+                                <span>Sunrise</span>
+                                <strong id="sunrise"></strong>
+                            </div>
+
+                            <div class="detailBox">
+                                <span>Sunset</span>
+                                <strong id="sunset"></strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="chart" class="weather-box">
+                    <h3>Hourly Forecast</h3>
+                    <canvas id="hourlyChart"></canvas>
+                </section>
+                <section id="next" class="weather-box">
+                    <h3>Next 7 Days Forecast</h3>
+                    <div id="forecastContainer"></div>
+                </section>
+            </main>
+            <footer></footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
