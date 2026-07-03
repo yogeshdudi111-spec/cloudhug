@@ -44,7 +44,7 @@ CloudHug is a responsive weather application built using **HTML, CSS, and JavaSc
 - Dynamic background images based on weather conditions
 - Automatic Day/Night background switching
 - Smooth animations
-- Fully responsive layout
+- Responsive layout (desktop optimized)
 
 ---
 
@@ -60,22 +60,21 @@ CloudHug is a responsive weather application built using **HTML, CSS, and JavaSc
 
 ## 📷 Screenshots
 
-> Add screenshots here after uploading them.
+### Home Page
 
-Example:
+![Home Page](screenshots/home.png)
 
-```
-screenshots/
-    home.png
-    sunny.png
-    rainy.png
-```
+### Search Result
 
-Then display them like:
+![Search Result](screenshots/search.png)
 
-```markdown
-![Home](screenshots/home.png)
-```
+### Hourly Forecast
+
+![Hourly Forecast](screenshots/hourly-chart.png)
+
+### 7-Day Forecast
+
+![7-Day Forecast](screenshots/forecast.png)
 
 ---
 
