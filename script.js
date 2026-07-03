@@ -43,7 +43,6 @@ locationBtn.addEventListener("click", function () {
 
 function fetchWeather(cityName) {
     setLoading(true);
-    setLoading(false);
 
     let url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${cityName}&days=7&aqi=no&alerts=no`;
 
@@ -60,11 +59,12 @@ function fetchWeather(cityName) {
             displayCurrentWeather(data);
             displayForecast(data);
             displayHourlyChart(data);
+
+            setLoading(false);
         })
         .catch((error) => {
-            getWeather.value = "Search";
-            getWeather.disabled = false;
             console.log(error);
+            setLoading(false);
         });
 }
 
