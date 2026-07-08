@@ -106,18 +106,18 @@ function displayCurrentWeather(data) {
 }
 
 function changeBackground(condition, isDay) {
-    let background = "weather.png";
+    let background = "./weather.png";
 
     if (!isDay) {
-        background = "night.jpg";
+        background = "./night.jpg";
     } else if (condition.includes("Sunny") || condition.includes("Clear")) {
-        background = "sunny.png";
+        background = "./sunny.png";
     } else if (condition.includes("Cloud") || condition.includes("Smoky Haze")) {
-        background = "cloudy.jpg";
+        background = "./cloudy.jpg";
     } else if (condition.includes("Rain") || condition.includes("Drizzle") || condition.includes("Mist")) {
-        background = "rain.jpg";
+        background = "./rain.jpg";
     } else if (condition.includes("Snow")) {
-        background = "snow.png";
+        background = "./snow.png";
     }
 
     document.body.style.background = `url('${background}') center/cover no-repeat`;
