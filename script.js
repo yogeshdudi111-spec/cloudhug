@@ -114,7 +114,7 @@ function changeBackground(condition, isDay) {
         background = "./sunny.png";
     } else if (condition.includes("Cloud") || condition.includes("Smoky Haze")) {
         background = "./cloudy.jpg";
-    } else if (condition.includes("Rain") || condition.includes("Light Rain") || condition.includes("Drizzle") || condition.includes("Mist")) {
+    } else if (condition.includes("Rain") || condition.includes("Light rain") || condition.includes("Drizzle") || condition.includes("Mist")) {
         background = "./rain.jpg";
     } else if (condition.includes("Snow")) {
         background = "./snow.png";
